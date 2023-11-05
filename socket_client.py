@@ -10,7 +10,7 @@ def client_program():
 
     message = input()
 
-    while message.lower().strip() != 'bye':
+    while message.lower().strip() != 'quit':
         client_socket.send(message.encode())
         data = client_socket.recv(1024).decode()
 
